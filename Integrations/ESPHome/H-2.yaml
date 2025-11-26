@@ -81,11 +81,6 @@ dashboard_import:
   package_import_url: github://ApolloAutomation/H-2/Integrations/ESPHome/H-2.yaml
   import_full_config: false
 
-improv_serial:
-
-esp32_improv:
-  authorizer: none
-
 ota:
   - platform: esphome
     id: ota_esphome
@@ -106,21 +101,12 @@ update:
 wifi:
   power_save_mode: HIGH
   output_power: 10
-  on_connect:
-    - delay: 5s
-    - ble.disable:
-  on_disconnect:
-    - ble.enable:
   ap:
     ssid: "Apollo H2 Hotspot"
 
 logger:
 
 captive_portal:
-
-web_server:
-  version: 3
-  port: 80
 
 external_components:
   - source: github://ApolloAutomation/ExternalComponents
