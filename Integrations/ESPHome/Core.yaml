@@ -12,7 +12,7 @@ output:
   - platform: ledc
     pin: GPIO20
     id: buzzer
-    max_power: 60%
+    max_power: 50%
 
 rtttl:
   id: rtttl_buzzer
