@@ -1,5 +1,5 @@
 substitutions:
-  version: "25.11.10.2"
+  version: "25.11.26.1"
 
 esp32:
   board: esp32-c6-devkitm-1
@@ -12,7 +12,7 @@ output:
   - platform: ledc
     pin: GPIO20
     id: buzzer
-    max_power: 60%
+    max_power: 50%
 
 rtttl:
   id: rtttl_buzzer
@@ -137,7 +137,7 @@ number:
     id: volume_control
     min_value: 0
     max_value: 100
-    initial_value: 100
+    initial_value: 25
     unit_of_measurement: "%"
     step: 1
     optimistic: true
@@ -197,6 +197,7 @@ binary_sensor:
       mode:
         input: true
         pullup: true
+      ignore_strapping_warning: true
     id: reset_button
     on_press:
       then:
@@ -319,7 +320,7 @@ light:
     num_leds: 57
     rgb_order: grb
     rmt_symbols: 48
-    color_correct: [50%, 50%, 50%]
+    color_correct: [40%, 40%, 40%]
     effects:
       - pulse:
           name: "Slow Pulse"
@@ -554,7 +555,7 @@ light:
     num_leds: 34
     rgb_order: grb
     rmt_symbols: 48
-    color_correct: [40%, 40%, 40%]
+    color_correct: [30%, 30%, 30%]
     effects:
       - pulse:
           name: "Slow Pulse"
