@@ -104,6 +104,8 @@ update:
     source: https://apolloautomation.github.io/H-2/firmware2/manifest.json
 
 wifi:
+  power_save_mode: HIGH
+  output_power: 10
   on_connect:
     - delay: 5s
     - ble.disable:
