@@ -137,7 +137,7 @@ number:
     id: volume_control
     min_value: 0
     max_value: 100
-    initial_value: 25
+    initial_value: 50
     unit_of_measurement: "%"
     step: 1
     optimistic: true
