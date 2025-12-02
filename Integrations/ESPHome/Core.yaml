@@ -1,5 +1,5 @@
 substitutions:
-  version: "25.11.26.2"
+  version: "25.12.2.1"
 
 esp32:
   board: esp32-c6-devkitm-1
@@ -137,7 +137,7 @@ number:
     id: volume_control
     min_value: 0
     max_value: 100
-    initial_value: 25
+    initial_value: 50
     unit_of_measurement: "%"
     step: 1
     optimistic: true
